@@ -5,9 +5,36 @@ Play Station 1 Emulator for .NET Framework 4.5 Any CPU
 PSX4Any is still in beta, so games a works not full speed.
 
 # Tested
-Galleria GCF1050TGF-E (Windows 10 x64)
-
 Surface RT (Windows 10 ARM32) (maybe works on windows RT 8/8.1)
+
+# Controls
+D-Pad UP: Up
+
+D-Pad Left: Left
+
+D-Pad Down: Down
+
+D-Pad Right: Right
+
+Triangle: W
+
+Square: A
+
+X: S
+
+Circle: D
+
+Start: Enter
+
+Select: Space
+
+L1: Q
+
+R1: E
+
+L2: 1
+
+R2: 3
 
 # Todo List
 ✖JIT Compiler
