@@ -30,9 +30,9 @@ Surface RT (Windows 10 ARM32) (maybe works on windows RT 8/8.1)
 MIT License
 
 # Credit
-This project would not have been possible without all of the following developers!
+This project would not have been possible without all of the following great developers!
 
 
-・BluestormDNA: "ProjectPSX" Original Developer >> PSX4Any is develop based on this.
+[ProjectPSX](https://github.com/BluestormDNA/ProjectPSX) >> PSX4Any is develop based on this.
 
-・NAudio: "https://github.com/naudio/NAudio" >> used this for audio backend.
+[NAudio](https://github.com/naudio/NAudio) >> used this for audio backend.
