@@ -1,6 +1,10 @@
 # PSX4Any
 Play Station 1 Emulator for .NET Framework 4.5 Any CPU
 
+<p align="center">
+  <img src="doc/screenshot.png" width="50%">
+</p>
+
 # Attention
 PSX4Any is still in beta, so games a works not full speed.
 
