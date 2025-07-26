@@ -2,7 +2,7 @@
 Play Station 1 Emulator for .NET Framework 4.5 Any CPU
 
 <p align="center">
-  <img src="doc/screenshot.png" width="50%">
+  <img src="doc/screenshot.png" width="100%">
 </p>
 
 # Attention
