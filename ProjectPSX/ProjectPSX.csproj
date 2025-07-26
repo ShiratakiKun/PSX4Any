@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F723680C-85BE-4350-A7E0-8D30C82A9C07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ProjectPSX</RootNamespace>
+    <AssemblyName>ProjectPSX</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\netstandard1.1\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\BUS.cs" />
+    <Compile Include="Core\CPU.cs" />
+    <Compile Include="Core\GTE.cs" />
+    <Compile Include="Core\ProjectPSX.cs" />
+    <Compile Include="Devices\CDROM\CD.cs" />
+    <Compile Include="Devices\CDROM\CDROM.cs" />
+    <Compile Include="Devices\CDROM\Sector.cs" />
+    <Compile Include="Devices\CDROM\TrackBuilder.cs" />
+    <Compile Include="Devices\CDROM\XaAdpcm.cs" />
+    <Compile Include="Devices\DMA\Channel.cs" />
+    <Compile Include="Devices\DMA\DMA.cs" />
+    <Compile Include="Devices\DMA\DmaChannel.cs" />
+    <Compile Include="Devices\DMA\InterruptChannel.cs" />
+    <Compile Include="Devices\Expansion\Exp2.cs" />
+    <Compile Include="Devices\GPU\GPU.cs" />
+    <Compile Include="Devices\GPU\VRAM.cs" />
+    <Compile Include="Devices\GPU\VRAM1555.cs" />
+    <Compile Include="Devices\Input\Controller.cs" />
+    <Compile Include="Devices\Input\DigitalController.cs" />
+    <Compile Include="Devices\Input\GamepadInputsEnum.cs" />
+    <Compile Include="Devices\Input\JOYPAD.cs" />
+    <Compile Include="Devices\Input\MemoryCard.cs" />
+    <Compile Include="Devices\InterruptController.cs" />
+    <Compile Include="Devices\MDEC.cs" />
+    <Compile Include="Devices\SPU\SPU.cs" />
+    <Compile Include="Devices\SPU\Voice.cs" />
+    <Compile Include="Devices\TIMERS.cs" />
+    <Compile Include="Disassembler\BIOS_Disassembler.cs" />
+    <Compile Include="Disassembler\MIPS_Disassembler.cs" />
+    <Compile Include="Host\IHostWindow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\BitOperations.cs" />
+    <Compile Include="Util\CollectionExtensions.cs" />
+    <Compile Include="Util\Constants.cs" />
+    <Compile Include="Util\Extension.cs" />
+    <Compile Include="Util\MathHelper.cs" />
+    <Compile Include="Util\MemoryMarshalExt.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSX4AnyCommon\PSX4AnyCommon.csproj">
+      <Project>{87A7EE5D-588A-4117-8A7F-700AC1E997BE}</Project>
+      <Name>PSX4AnyCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
