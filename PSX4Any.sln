@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSX4Any", "PSX4Any.csproj",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectPSX", "ProjectPSX\ProjectPSX.csproj", "{F723680C-85BE-4350-A7E0-8D30C82A9C07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSettings", "..\ClassLibrary\AppSettings\AppSettings.csproj", "{5D8F5778-E543-4864-A840-E8EABA5BED70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSettings", "AppSettings\AppSettings.csproj", "{5D8F5778-E543-4864-A840-E8EABA5BED70}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSX4AnyCommon", "PSX4AnyCommon\PSX4AnyCommon.csproj", "{87A7EE5D-588A-4117-8A7F-700AC1E997BE}"
 EndProject
