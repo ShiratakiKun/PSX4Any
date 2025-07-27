@@ -8,6 +8,13 @@ Play Station 1 Emulator for .NET Framework 4.5 Any CPU
 # Attention
 PSX4Any is still in beta, so games a works not full speed.
 
+# Note
+bios: scph1001.bin to bios folder
+
+memcard: "memcard.mcr" created automatically when save game
+
+.NET Framework 4.5
+
 # Tested
 Surface RT (Windows 10 ARM32) (maybe works on windows RT 8/8.1)
 
