@@ -13,8 +13,6 @@ bios: scph1001.bin to bios folder
 
 memcard: "memcard.mcr" created automatically when save game
 
-.NET Framework 4.5
-
 # Tested
 Surface RT (Windows 10 ARM32) (maybe works on windows RT 8/8.1)
 
