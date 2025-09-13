@@ -18,9 +18,13 @@ Surface RT (Windows 10 ARM32) (maybe works on windows RT 8/8.1)
 
 # Build
 Tool: Visual Studio Community 2019
+
 1: Download or Clone project
+
 2: Fix block access: "Get-ChildItem -Recurse | Unblock-File" in project root directory on power shell
+
 3: Open PSX4Any.sln
+
 4: Build
 
 # Controls
