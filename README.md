@@ -23,9 +23,11 @@ Tool: Visual Studio Community 2019
 
 2: Fix block access: "Get-ChildItem -Recurse | Unblock-File" in project root directory on power shell
 
-3: Open PSX4Any.sln
+3: Move settings.ini to bin/Debug/ from project root directory
 
-4: Build
+4: Open PSX4Any.sln
+
+5: Build
 
 # Controls
 D-Pad UP: Up
